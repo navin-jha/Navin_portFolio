@@ -3,11 +3,11 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white mt-28 px-10 py-12">
-            <div className="flex flex-col md:flex-row justify-evenly gap-10 text-center md:text-left">
+        <footer className="bg-black text-white mt-20 px-4 sm:px-8 md:px-10 py-10">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10 text-center md:text-left">
 
                 {/* Left */}
-                <div className="flex flex-col gap-3 items-center ">
+                <div className="flex flex-col gap-3 items-center md:items-start">
                     <h2 className="font-semibold text-lg">Navin Jha</h2>
                     <p className="text-sm text-gray-300">
                         Let’s build something great together 🚀
@@ -18,35 +18,35 @@ export default function Footer() {
                 </div>
 
                 {/* Middle */}
-                <div className="flex flex-col gap-3 items-center">
+                <div className="flex flex-col gap-3 items-center md:items-start">
                     <h3 className="font-semibold text-lg">Connect</h3>
 
                     <a
                         href="mailto:njha55360@gmail.com"
-                        className="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-300 hover:text-blue-400 transition"
+                        className="flex items-center gap-2 text-sm text-gray-300 hover:text-blue-400 transition"
                     >
                         <FaEnvelope />
-                        njha55360@gmail.com
+                        <span className="break-all">njha55360@gmail.com</span>
                     </a>
 
                     <a
                         href="tel:+919801540575"
-                        className="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-300 hover:text-green-400 transition"
+                        className="flex items-center gap-2 text-sm text-gray-300 hover:text-green-400 transition"
                     >
                         <FaPhoneAlt />
-                        +91 9801540575
+                        +91&nbsp;9801540575
                     </a>
                 </div>
 
                 {/* Right */}
-                <div className="flex flex-col gap-3 items-center">
+                <div className="flex flex-col gap-3 items-center md:items-start">
                     <h3 className="font-semibold text-lg">Get in Touch</h3>
 
                     <a
                         href="https://www.linkedin.com/in/navinjha04/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-300 hover:text-blue-500 transition"
+                        className="flex items-center gap-2 text-sm text-gray-300 hover:text-blue-500 transition"
                     >
                         <FaLinkedin />
                         LinkedIn
@@ -56,12 +56,11 @@ export default function Footer() {
                         href="https://github.com/navin-jha"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-300 hover:text-gray-100 transition"
+                        className="flex items-center gap-2 text-sm text-gray-300 hover:text-gray-100 transition"
                     >
-                        <FaGithub className="h-4 w-4" />
+                        <FaGithub />
                         GitHub
                     </a>
-
                 </div>
 
             </div>

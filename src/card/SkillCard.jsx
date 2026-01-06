@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from "react";
 function SkillCard({ title, color, children }) {
     const colorMap = {
         blue: "bg-blue-900 hover:bg-blue-700",
@@ -9,13 +8,19 @@ function SkillCard({ title, color, children }) {
     };
 
     return (
-        <div className="p-6 rounded-xl shadow-lg text-center">
-            <h3 className="text-xl font-semibold mb-4">{title}</h3>
-            <div className="flex flex-wrap justify-center gap-3">
+        <div className="p-4 sm:p-5 md:p-6 rounded-xl shadow-lg text-center">
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
+                {title}
+            </h3>
+
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
                 {children.map((skill, i) => (
                     <span
                         key={i}
-                        className={`${colorMap[color]} text-white px-3 py-1 rounded-md transition`}
+                        className={`${colorMap[color]} 
+              text-white text-xs sm:text-sm 
+              px-2 sm:px-3 py-1 
+              rounded-md transition`}
                     >
                         {skill}
                     </span>
@@ -25,4 +30,4 @@ function SkillCard({ title, color, children }) {
     );
 }
 
-export default SkillCard
+export default SkillCard;

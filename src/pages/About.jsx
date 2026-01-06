@@ -148,7 +148,7 @@ export default function About() {
               </div>
 
               <p className="text-sm text-gray-300 font-medium">
-                X – Science
+                X – Matriculation
               </p>
 
               <p className="text-sm text-gray-400 mt-1">
