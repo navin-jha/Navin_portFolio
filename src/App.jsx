@@ -6,10 +6,10 @@ function App() {
   return (
     <>
       <Header />
-      <main className='m-7'>
+      <main>
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }

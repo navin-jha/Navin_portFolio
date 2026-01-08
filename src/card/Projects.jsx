@@ -28,7 +28,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="px-6 sm:px-8 md:px-12 py-6 overflow-hidden">
+        <div className=" overflow-hidden">
             <div className="flex gap-5 sm:gap-6 md:gap-8 overflow-x-auto flex-nowrap scroll-smooth pb-4">
 
                 {projects.map((project, index) => (
